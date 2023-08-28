@@ -1,6 +1,6 @@
 # Restaurant Web App - Full Stack Project
 
-![screenshot]("public/screenshots/Home%20Hero%20Page.png")
+![screenshot](public/screenshots/Home%20Hero%20Page.png)
 
 This repository showcases my skills as a web developer by building a full stack restaurant web app using Next.js, Sanity.io, Stripe, and Tailwind CSS.
 

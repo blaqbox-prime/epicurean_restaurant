@@ -37,9 +37,3 @@ const LeafletMap = () => {
 
 export default LeafletMap
 
-export async function getServerSideProps() {
-
-  return {
-    props: {},
-  };
-}

@@ -132,9 +132,3 @@ async function page({ params }: { params: { slug: string } }) {
 
 export default page;
 
-export async function getServerSideProps() {
-
-  return {
-    props: {},
-  };
-}

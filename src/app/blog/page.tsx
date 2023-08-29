@@ -88,9 +88,3 @@ async function Blog(){
 
 export default Blog;
 
-export async function getServerSideProps() {
-
-  return {
-    props: {},
-  };
-}

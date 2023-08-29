@@ -40,7 +40,7 @@ export default function RootLayout({
         window.removeEventListener("scroll", handleScroll);
       }
     };
-  }, []);
+  }, [window]);
 
   return (
     <Provider store={store}>

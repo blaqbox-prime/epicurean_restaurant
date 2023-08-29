@@ -60,3 +60,10 @@ const page = () => {
 }
 
 export default page
+
+export async function getServerSideProps() {
+
+  return {
+    props: {},
+  };
+}

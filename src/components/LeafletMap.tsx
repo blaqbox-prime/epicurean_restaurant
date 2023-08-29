@@ -11,7 +11,7 @@ const LeafletMap = () => {
 
     // const mapCenter : LatLngExpression = [-23.916133, 29.487854]
 
-  return (
+  return typeof window !== 'undefined' && (
     <MapContainer center={[-23.91556,29.48819]} zoom={19} scrollWheelZoom={false} className='h-[600px]'>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -36,3 +36,10 @@ const LeafletMap = () => {
 }
 
 export default LeafletMap
+
+export async function getServerSideProps() {
+
+  return {
+    props: {},
+  };
+}

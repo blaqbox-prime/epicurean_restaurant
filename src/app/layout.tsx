@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { BackToTop, Footer, Header, TopBar } from "@/components";
 import "./styles/globals.css";
 import { ToastContainer } from "react-toastify";
-import { ReactElement, createRef } from "react";
 import "react-toastify/dist/ReactToastify.css";
 import { Provider } from "react-redux";
 import store from "../redux";
@@ -61,24 +60,22 @@ export default function RootLayout({
         <body id="top" className="">
           <TopBar />
 
-          <Header
-            visible={isHeaderVisible}
-            active={
-              typeof window !== "undefined" ? window.scrollY >= 50 : false
-            }
-          />
+          {/* Add conditional check for Header */}
+          {typeof window !== "undefined" && (
+            <Header
+              visible={isHeaderVisible}
+              active={window.scrollY >= 50}
+            />
+          )}
 
           {children}
 
-          <BackToTop
-            classes={
-              typeof window !== "undefined"
-                ? window?.scrollY >= 50
-                  ? "active"
-                  : ""
-                : ""
-            }
-          />
+          {/* Add conditional check for BackToTop */}
+          {typeof window !== "undefined" && (
+            <BackToTop
+              classes={window.scrollY >= 50 ? "active" : ""}
+            />
+          )}
 
           <Footer />
 

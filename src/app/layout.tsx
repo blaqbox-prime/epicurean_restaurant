@@ -17,20 +17,21 @@ export default function RootLayout({
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [isHeaderVisible, setIsHeaderVisible] = useState(true);
 
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
-      const isScrollBottom = lastScrollPos < window.scrollY;
-      if (isScrollBottom) {
-        setIsHeaderVisible(false);
-      } else {
-        setIsHeaderVisible(true);
-      }
-
-      setLastScrollPos(window.scrollY);
-    }
-  };
-
   useEffect(() => {
+
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        const isScrollBottom = lastScrollPos < window.scrollY;
+        if (isScrollBottom) {
+          setIsHeaderVisible(false);
+        } else {
+          setIsHeaderVisible(true);
+        }
+  
+        setLastScrollPos(window.scrollY);
+      }
+    };
+
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", handleScroll);
     }

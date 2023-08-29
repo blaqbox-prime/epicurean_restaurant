@@ -46,7 +46,7 @@ This project was developed as part of my journey as a web developer.
 Special thanks to the open-source communities of Next.js, Sanity.io, Stripe, and Tailwind CSS.
 License
 This project is open-source and available under the MIT License.
-Design by [CodewithSadeer]("https://www.youtube.com/watch?v=CjVGp5kGHxA&pp=ygUNY29kZXdpdGhzYWRlZQ%3D%3D"). All rights reserved.
+Design by [CodewithSadee]("https://www.youtube.com/watch?v=CjVGp5kGHxA&pp=ygUNY29kZXdpdGhzYWRlZQ%3D%3D"). All rights reserved.
 
 
 
